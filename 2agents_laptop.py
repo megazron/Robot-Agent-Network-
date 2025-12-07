@@ -25,7 +25,7 @@ class Status(Model):
 # Configuration
 # -------------------------------
 PI_AGENT_ADDRESS = "agent1qdakxxf9saqnmft032m4zfs8mj2cdnmehljv6jkw7yy6t92hq6cjj4mh2tn"
-LAPTOP_IP = "10.64.173.208"  # Your laptop IP
+LAPTOP_IP = ""  # Your laptop IP
 SEND_INTERVAL = 0.5  # seconds
 HUMAN_DELAY = 1.5    # 500 milliseconds
 
@@ -203,3 +203,4 @@ if __name__ == "__main__":
     threading.Thread(target=lambda: agent.run(), daemon=True).start()
     gui_update()
     root.mainloop()
+
